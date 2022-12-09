@@ -1,0 +1,46 @@
+{
+  "name": "config-service",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "Service for providing configs to other services",
+  "main": "src/index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx tsc",
+    "start": "node dist/index.ts",
+    "dev": "nodemon -x ts-node --esm ./src/index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brocahontaz/config-service.git"
+  },
+  "keywords": [
+    "config",
+    "service",
+    "node",
+    "typescript"
+  ],
+  "author": "Johan Andersson",
+  "license": "NONE",
+  "bugs": {
+    "url": "https://github.com/brocahontaz/config-service/issues"
+  },
+  "homepage": "https://github.com/brocahontaz/config-service#readme",
+  "devDependencies": {
+    "@types/express": "^4.17.14",
+    "@typescript-eslint/eslint-plugin": "^5.46.0",
+    "eslint": "^8.29.0",
+    "eslint-config-standard-with-typescript": "^23.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.6.0",
+    "eslint-plugin-promise": "^6.1.1",
+    "nodemon": "^2.0.20",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.4"
+  },
+  "dependencies": {
+    "@types/node": "^18.11.12",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2"
+  }
+}
